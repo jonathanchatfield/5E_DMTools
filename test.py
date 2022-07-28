@@ -22,7 +22,8 @@ scores = []
 
 for i in range(1, 7):
     
-    roll = sorted(list(random.randrange(1, 6) for i in range(4)), reverse=True) 
+    roll = sorted(list(random.randrange(1, 7) for i in range(4)), reverse=True) 
+    print(roll)
     stat = (sum(roll) - min(roll))
     scores.append(stat)
 
