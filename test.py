@@ -37,6 +37,9 @@ stats = list(zip(abilities, scores))
 
 print(stats)
 
+for i, j in stats:
+    print(i, j)
+
 
 
     
