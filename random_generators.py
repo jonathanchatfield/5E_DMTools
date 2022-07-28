@@ -23,11 +23,28 @@ def basic_stats():
     # return rolls
     scores = []
 
+    # for i in range(1, 7):
+    #     roll = sorted(list(random.randrange(1, 7) for i in range(4)), reverse=True) 
+    #     stat = (sum(roll) - min(roll))
+    #     scores.append(stat)
+    # return sorted(scores, reverse=True)
+
+    # First Edition Rules Mod
+    
     for i in range(1, 7):
+        abilities = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
         roll = sorted(list(random.randrange(1, 7) for i in range(4)), reverse=True) 
+        #print(roll)
         stat = (sum(roll) - min(roll))
         scores.append(stat)
-    return sorted(scores, reverse=True)
+ 
+    stats = list(zip(abilities, scores))
+
+    return stats
+    
+
+
+
 
 def random_race():
     possible_races = ["Aarakocra", "Aasimar", "Bugbear", "Centaur",	"Changeling",

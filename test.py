@@ -2,6 +2,7 @@
 # Append these numbers to a list
 # Drop the lowest number
 
+from hashlib import new
 import random
 
 
@@ -23,11 +24,20 @@ scores = []
 for i in range(1, 7):
     
     roll = sorted(list(random.randrange(1, 7) for i in range(4)), reverse=True) 
-    print(roll)
+    #print(roll)
     stat = (sum(roll) - min(roll))
     scores.append(stat)
 
-print(scores)
+    #1E Ruleset
+    abilities = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
+   
+#print(scores)
+
+stats = list(zip(abilities, scores))
+
+print(stats)
+
+
 
     
 
