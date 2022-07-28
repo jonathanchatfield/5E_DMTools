@@ -11,7 +11,9 @@ def basic_stats():
         while stat_count < 4:
             stats.append(random.randint(1, 6)) # roll a d6 4 times
             stat_count += 1
-        stats = sorted(stats) # Sort low to high
+        #uncomment to debug    
+        #print(stats)
+        stats.sort() # Sort low to high
         # print(stats)
         stats.pop(0) # Drop lowest
         # print(stats)
