@@ -1,10 +1,9 @@
 import random
 
 def basic_stats():
-    
+    # keeping this here for learning experience
     # count = 0
     # rolls = []
-
     # while count < 6:
     #     stat_count = 0
     #     stats = []
