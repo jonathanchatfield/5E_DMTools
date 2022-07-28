@@ -11,8 +11,7 @@ def basic_stats():
     
     return sorted(scores, reverse=True)
 
-  
-    
+
 # First Edition Rules Mod    
 def basic_stats_1e():
     scores = []
