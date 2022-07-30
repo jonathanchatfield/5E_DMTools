@@ -2,43 +2,53 @@
 # Append these numbers to a list
 # Drop the lowest number
 
-from hashlib import new
 import random
+import math
 
-
-# rolls = []
-
-# for i in range(1, 7):
-#     roll = [random.randrange(1, 6) for i in range(4)]
-#     roll.sort(reverse=True)
-#     print(roll)
-#     roll.pop()
-#     rolls.append(sum(roll))
-    
-    
-
-# print(sorted(rolls, reverse=True))
-
-scores = []
+rolls = []
+modifiers = []
 
 for i in range(1, 7):
-    
-    roll = sorted(list(random.randrange(1, 7) for i in range(4)), reverse=True) 
+    roll = [random.randrange(1, 6) for i in range(4)]
+    roll.sort(reverse=True)
     #print(roll)
-    stat = (sum(roll) - min(roll))
-    scores.append(stat)
-
-    #1E Ruleset
-    abilities = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
+    roll.pop()
+    rolls.append(sum(roll))
+    
+            
    
-#print(scores)
+print(rolls)
+for roll in rolls:
+        modifiers.append(math.floor((roll - 10) / 2))
 
-stats = list(zip(abilities, scores))
+modded_scores = zip(rolls, modifiers) 
+# print(list(modded_scores))
 
-print(stats)
+for score,modifier in modded_scores:
+    print(f"Your score is {score} with a modifier of {modifier}")
 
-for i, j in stats:
-    print(i, j)
+
+
+# scores = []
+
+# for i in range(1, 7):
+    
+#     roll = sorted(list(random.randrange(1, 7) for i in range(4)), reverse=True) 
+#     #print(roll)
+#     stat = (sum(roll) - min(roll))
+#     scores.append(stat)
+
+#     #1E Ruleset
+#     abilities = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
+   
+# #print(scores)
+
+# stats = list(zip(abilities, scores))
+
+# print(stats)
+
+# for i, j in stats:
+#     print(i, j)
 
 
 
