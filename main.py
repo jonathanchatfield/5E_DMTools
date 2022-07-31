@@ -5,7 +5,7 @@ import lists_file
 
 rollstats_answer = input("Would you like to roll your stats? ").lower()
 
-if rollstats_answer == 'y':
+if rollstats_answer == 'y' or 'yes':
     print(f"You rolled {random_generators.basic_stats()}")
 else:
     print("Ok then, bye!")
