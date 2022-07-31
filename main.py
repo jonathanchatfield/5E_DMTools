@@ -13,10 +13,4 @@ else:
 assignstats_answer = input("Shall we assign your stats now? ").lower()
 
 if assignstats_answer == 'y' or 'yes':
-    
-
-
-
-
-
-
+    pass
