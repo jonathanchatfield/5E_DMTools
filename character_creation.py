@@ -12,6 +12,7 @@
 # 
 
 
+from sre_constants import CH_LOCALE
 from random_generators import basic_stats as stats
 
 
@@ -28,7 +29,7 @@ class Character:
         self.wis_score = wis_score
         self.cha_score = cha_score
 
-     
+    # Create the character based on user input
     @classmethod
     def character_input(cls):
         # Generate the 6 stat scores from the random_generator file
@@ -36,7 +37,7 @@ class Character:
         character_scores = stats()
         # Print the scores for debugging purposes
         print(character_scores)
-        # Create the character based on user input
+       
         # TODO have player CHOOSE where to place random scores
 
         return cls(
@@ -59,3 +60,4 @@ class Character:
 
 character_1 = Character.character_input()
 print(Character.display_character(character_1))
+
