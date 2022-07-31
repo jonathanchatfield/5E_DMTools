@@ -12,7 +12,7 @@
 # 
 
 
-from email.errors import CharsetError
+from random_generators import basic_stats as stats
 
 
 class Character:
@@ -31,16 +31,24 @@ class Character:
      
     @classmethod
     def character_input(cls):
+        # Generate the 6 stat scores from the random_generator file
+        # Create a list from those scores
+        character_scores = stats()
+        # Print the scores for debugging purposes
+        print(character_scores)
+        # Create the character based on user input
+        # TODO have player CHOOSE where to place random scores
+
         return cls(
             character_name = input("By what name shall you be known?: "),
             character_race = input("What is your Race?: "),
             character_class = input("What is your class?: "),
-            str_score = int(input("Enter your Strength Score: ")),
-            dex_score = int(input("Enter your Dexterity Score: ")),
-            con_score = int(input("Enter your Constitution Score: ")),
-            int_score = int(input("Enter your Intelligence Score: ")),
-            wis_score = int(input("Enter your Wisdom Score: ")),
-            cha_score = int(input("Enter your Charisma Score: ")),
+            str_score = character_scores[0],#int(input("Enter your Strength Score: ")),
+            dex_score = character_scores[1],#int(input("Enter your Dexterity Score: ")),
+            con_score = character_scores[2],#int(input("Enter your Constitution Score: ")),
+            int_score = character_scores[3],#int(input("Enter your Intelligence Score: ")),
+            wis_score = character_scores[4], #int(input("Enter your Wisdom Score: ")),
+            cha_score = character_scores[5],#int(input("Enter your Charisma Score: ")),
         )
 
     def display_character(self):
