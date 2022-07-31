@@ -1,3 +1,5 @@
+rulesets = ["1e", "2e", "5e"]
+
 character_race = ["Aarakocra", "Aasimar", "Bugbear", "Centaur",	"Changeling",
                       "Dragonborn", "Dwarf", "Elf", "Firbolg", "Genasi", "Gith", "Gnome", "Goblin",
                       "Goliath", "Halfling", "Half-Elf", "Half-Orc", "Hobgoblin", "Human", "Kalashtar",
@@ -13,3 +15,4 @@ dexterity_skills = ["Acrobatics", "Sleight of Hand", "Stealth"]
 intelligence_skills = ["Arcana", "History", "Investigation", "Nature", "Religion"]
 wisdom_skills = ["Animal Handling", "Insight", "Medicine", "Perception", "Survival"]
 charisma_skills = ["Deception", "Intimidation", "Performance", "Persuasion"]
+

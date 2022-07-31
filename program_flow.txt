@@ -1,0 +1,25 @@
+1. Select Character Generation Ruleset (1e, 2e, 5e)
+
+2. Prompt player to roll their stats
+
+3. Prompt player to choose character race
+
+    a. let character know about any racial stat modifiers that will be applied
+
+4. Prompt player to select where to assign stats (5e Only)
+
+5. Add/Subtract racial modifiers to/from appropriate stats
+
+6. Calculate proficiency bonus
+
+7. Prompt Player to choose a class
+
+8. Prompt Player to choose a background
+
+9. Calculate skill modifiers (stat based) and calculate proficiency bonuses for skills
+
+10. Choose primary armor and weapon type
+
+11. Add appropriate modifiers and calculate AC and attack bonuses, etc.
+
+
