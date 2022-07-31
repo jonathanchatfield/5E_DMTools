@@ -1,12 +1,22 @@
+from re import I
 import random_generators
+import lists_file
 
-print(f"Your NPC is a/an: {random_generators.random_race()} {random_generators.random_class()}")
-print(f"Their stats are {random_generators.basic_stats()}")
 
-# 1st Edition Ruleset
-# stats = random_generators.basic_stats_1e()
-# print("Their stats are:")
-# for i, j in stats:
-#     print(i, j)
+rollstats_answer = input("Would you like to roll your stats? ").lower()
 
-# todo set up minimum stats for classes 
+if rollstats_answer == 'y':
+    print(f"You rolled {random_generators.basic_stats()}")
+else:
+    print("Ok then, bye!")
+
+assignstats_answer = input("Shall we assign your stats now? ").lower()
+
+if assignstats_answer == 'y' or 'yes':
+    
+
+
+
+
+
+
