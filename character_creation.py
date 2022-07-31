@@ -28,11 +28,7 @@ class Character:
         self.wis_score = wis_score
         self.cha_score = cha_score
 
-    def display_character(self):
-        print()
-        print(f"Character Name: {self.character_name}\nCharacter Race: {self.character_race} \nCharacter Class: {self.character_class} \nStrength: {self.str_score}\nDexterity: {self.dex_score}\nConstitution: {self.con_score}\nIntelligence: {self.int_score}\nWisdom: {self.wis_score}\nCharisma: {self.cha_score}\n")
-
-    
+     
     @classmethod
     def character_input(cls):
         return cls(
@@ -46,7 +42,12 @@ class Character:
             wis_score = int(input("Enter your Wisdom Score: ")),
             cha_score = int(input("Enter your Charisma Score: ")),
         )
-            
 
-Grummel = Character.character_input()
-print(Character.display_character(Grummel))
+    def display_character(self):
+        print()
+        print(f"Character Name: {self.character_name}\nCharacter Race: {self.character_race} \nCharacter Class: {self.character_class} \nStrength: {self.str_score}\nDexterity: {self.dex_score}\nConstitution: {self.con_score}\nIntelligence: {self.int_score}\nWisdom: {self.wis_score}\nCharisma: {self.cha_score}\n")           
+
+
+
+character_1 = Character.character_input()
+print(Character.display_character(character_1))
