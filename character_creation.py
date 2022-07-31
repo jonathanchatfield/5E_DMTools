@@ -12,7 +12,7 @@
 # 
 
 
-from sre_constants import CH_LOCALE
+    
 from random_generators import basic_stats as stats
 
 

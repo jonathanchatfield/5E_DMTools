@@ -1,6 +1,5 @@
 import random
-from character_classes import character_class
-from character_races import character_race
+import lists_file as rules_list
 
 # First Edition Rules Mod    
 def basic_stats_1e():
@@ -31,12 +30,12 @@ def basic_stats():
 
 def random_race():
     
-    race = random.choice(character_race)
+    race = random.choice(rules_list.character_race)
     return race
     
 
 def random_class():
-    chosen_class = random.choice(character_class)
+    chosen_class = random.choice(rules_list.character_class)
     return chosen_class
 
 
