@@ -1,16 +1,6 @@
 import random
-
-def basic_stats():
-   
-    scores = []
-
-    for i in range(1, 7):
-        roll = sorted(list(random.randrange(1, 7) for i in range(4)), reverse=True) 
-        stat = (sum(roll) - min(roll))
-        scores.append(stat)
-    
-    return sorted(scores, reverse=True)
-
+from character_classes import character_class
+from character_races import character_race
 
 # First Edition Rules Mod    
 def basic_stats_1e():
@@ -26,21 +16,27 @@ def basic_stats_1e():
     stats = list(zip(abilities, scores))
     return stats
 
+    
+def basic_stats():
+   
+    scores = []
+
+    for i in range(1, 7):
+        roll = sorted(list(random.randrange(1, 7) for i in range(4)), reverse=True) 
+        stat = (sum(roll) - min(roll))
+        scores.append(stat)
+    
+    return sorted(scores, reverse=True)
+
 
 def random_race():
-    possible_races = ["Aarakocra", "Aasimar", "Bugbear", "Centaur",	"Changeling",
-                      "Dragonborn", "Dwarf", "Elf", "Firbolg", "Genasi", "Gith", "Gnome", "Goblin",
-                      "Goliath", "Halfling", "Half-Elf", "Half-Orc", "Hobgoblin", "Human", "Kalashtar",
-                      "Kenku", "Kobold", "Lizardfolk", "Loxodon", "Minotaur", "Orc", "Shifter", "Tabaxi", 
-                      "Tiefling", "Tortle", "Triton", "Vedalken", "Warforged", "Yuan-Ti Pureblood"]
-    race = random.choice(possible_races)
+    
+    race = random.choice(character_race)
     return race
     
 
 def random_class():
-    possible_classes = ["Fighter", "Ranger", "Wizard", "Sorceror", "Warlock", "Rogue", "Monk",
-                        "Artificer", "Bard", "Cleric", "Paladin", "Druid", "Barbarian"]
-    chosen_class = random.choice(possible_classes)
+    chosen_class = random.choice(character_class)
     return chosen_class
 
 
