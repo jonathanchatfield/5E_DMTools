@@ -1,18 +1,3 @@
-# Create a class for each race
-# Use the class to add relevant ability modifiers
-#
-#
-
-# race
-# class
-# abilities
-# ability modifiers
-# proficiencies
-# skills
-# 
-
-
-    
 from random_generators import basic_stats as stats
 
 
