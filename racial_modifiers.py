@@ -1,11 +1,3 @@
-from calendar import SATURDAY
-from gettext import translation
-from logging.config import _LoggerConfiguration
-from os import O_RSYNC
-from select import KQ_NOTE_LINKUP
-from traceback import TracebackException
-
-
 dwarf_hill = {'Strength': 0,
               'Dexterity': 0,
               'Constitution': 2,
