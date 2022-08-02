@@ -1,12 +1,15 @@
 rulesets = ["1e", "2e", "5e"]
 
-character_race = ["Aarakocra", "Aasimar", "Bugbear", "Centaur",	"Changeling",
-                      "Dragonborn", "Dwarf", "Elf", "Firbolg", "Genasi", "Gith", "Gnome", "Goblin",
-                      "Goliath", "Halfling", "Half-Elf", "Half-Orc", "Hobgoblin", "Human", "Kalashtar",
-                      "Kenku", "Kobold", "Lizardfolk", "Loxodon", "Minotaur", "Orc", "Shifter", "Tabaxi", 
-                      "Tiefling", "Tortle", "Triton", "Vedalken", "Warforged", "Yuan-Ti Pureblood"]
+character_races_basic = [
+                         "Dragonborn", "Dwarf", "Elf", "Gnome", "Halfling", "Half-Elf", "Half-Orc",  "Human", "Tiefling"]
 
-character_class = ["Fighter", "Ranger", "Wizard", "Sorceror", "Warlock", "Rogue", "Monk",
+character_races_expanded = ["Aarakocra", "Aasimar",  "Centaur", "Changeling", "Firbolg", "Genasi", "Goliath",  "Kalashtar", "Minotaur", "Triton",
+                            "Loxodon", "Shifter", "Kenku", "Vedalken", "Tabaxi", "Tortle", "Warforged", "Yuan-Ti Pureblood"]
+
+character_races_evil = ["Bugbear", "Goblin", "Gith", "Hobgoblin", "Kobold", "Lizardfolk", "Orc"]
+
+
+character_classes = ["Fighter", "Ranger", "Wizard", "Sorceror", "Warlock", "Rogue", "Monk",
                         "Artificer", "Bard", "Cleric", "Paladin", "Druid", "Barbarian"]
 
 
