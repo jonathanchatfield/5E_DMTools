@@ -1,6 +1,7 @@
 import lists_file
 import random_generators
 import time
+
  
 
 character_name = input("By what name will your character be known? ")
@@ -28,11 +29,9 @@ character_creation = {"Name": character_name,
                       "Class": character_class}
 
 print("Here is what you have so far: \n")
+
 for key, value in character_creation.items():
     print(f"{key}: {value}")
-
-
-
 
 
 
