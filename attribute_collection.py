@@ -20,13 +20,14 @@ print("The following classes are available, which will you choose? ")
 print(", ".join(lists_file.character_classes))
 
 character_class = input("Enter your choice: ")
+print('\n')
 
 character_creation = {"Name": character_name,
                       "Race": character_race,
                       "Stats": your_roll,
                       "Class": character_class}
 
-print("Here is what you have so far:")
+print("Here is what you have so far: \n")
 for key, value in character_creation.items():
     print(f"{key}: {value}")
 
