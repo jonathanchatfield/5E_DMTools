@@ -1,11 +1,12 @@
 from time import sleep
 import math
 from random_generators import basic_stats as stats
+import racial_modifiers
 
 
 # generate scores
 generated_scores = stats()
-chosen_race = 'Dragonborn'
+chosen_race = racial_modifiers.dragonborn
 
 
 # Ability Score dictionary for score assignment
