@@ -6,17 +6,17 @@ import racial_modifiers
 
 # generate scores
 generated_scores = stats()
-chosen_race = racial_modifiers.dragonborn
+# chosen_race = racial_modifiers.dragonborn
 
 
 # Ability Score dictionary for score assignment
 
-ability_scores  = {'Strength': None,
-                   'Dexterity': None,
-                   'Constitution': None,
-                   'Intelligence': None,
-                   'Wisdom': None,
-                   'Charisma': None}
+ability_scores = {'Strength': None,
+                  'Dexterity': None,
+                  'Constitution': None,
+                  'Intelligence': None,
+                  'Wisdom': None,
+                  'Charisma': None}
 
 # TODO add the ability to import racial modifiers dictionary based on race selection
 # Static Racial dictionary for testing
@@ -36,7 +36,6 @@ modifiers = {'Strength': None,
              'Charisma': None}
 
 
-
 for ability in ability_scores:
     print(generated_scores)
     score = int(input(f"which score would you like to assign to {ability}: "))
@@ -52,7 +51,7 @@ for key, value in ability_scores.items():
 
 sleep(2)
 print()
-print(f"As a {chosen_race} the following scores are modified ")
+print(f"As a Dragonborn the following scores are modified ")
 for key, value in dragonborn.items():
    if value != 0:
         if value > 0:
