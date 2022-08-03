@@ -2,13 +2,14 @@ import lists_file
 import random_generators
 from time import sleep
 import math
+import racial_modifiers
 
 character_name = input("By what name will your character be known? ")
 
 print("You may choose from the following races:")
 print(", ".join(lists_file.character_races_basic))
 
-character_race = input("What race will your character be? ")
+character_race = input("What race will your character be? ").lower()
 
 print("Let's roll stats before choosing a class.\n")
 your_roll = random_generators.basic_stats()
@@ -41,12 +42,13 @@ ability_scores = {'Strength': None,
 
 # TODO add the ability to import racial modifiers dictionary based on race selection
 # Static Racial dictionary for testing
-dragonborn = {'Strength': 2,
-              'Dexterity': 0,
-              'Constitution': 0,
-              'Intelligence': 0,
-              'Wisdom': 0,
-              'Charisma': 1}
+# dragonborn = {'Strength': 2,
+#               'Dexterity': 0,
+#               'Constitution': 0,
+#               'Intelligence': 0,
+#               'Wisdom': 0,
+#               'Charisma': 1}
+
 
 # A dictionary that will be populated by the calculation of post-racially modified ability scores
 modifiers = {'Strength': None,
@@ -73,13 +75,12 @@ for key, value in ability_scores.items():
 
 sleep(2)
 print()
-print(f"As a Dragonborn the following scores are modified ")
-for key, value in dragonborn.items():
+print(f"As a {character_race} the following scores are modified ")
+
+for key, value in getattr(racial_modifiers, character_race).items():
     if value != 0:
-        if value > 0:
-            print(f"{key} +{value}")
-        else:
-            print(f"{key} -{value}")
+        print(f"{key} {value:+}")
+
 
 print("Adding racial modifiers:")
 sleep(2)
@@ -87,8 +88,8 @@ sleep(2)
 # look at the base ability_scores, check if it exists in racial modifiers for dragonborn, and add the values that are
 # different
 for key in ability_scores:
-    if key in dragonborn:
-        ability_scores[key] = ability_scores[key] + dragonborn[key]
+    if key in getattr(racial_modifiers, character_race):
+        ability_scores[key] = ability_scores[key] + getattr(racial_modifiers, character_race)[key]
     else:
         pass
 
