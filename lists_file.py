@@ -1,6 +1,7 @@
 rulesets = ["1e", "2e", "5e"]
 
-character_races_basic = ["Dragonborn", "Dwarf", "Elf", "Gnome", "Halfling", "Half-Elf", "Half-Orc", "Human", "Tiefling"]
+character_races_basic = ["Dragonborn", "Dwarf", "Elf_High", "Elf_Wood", "Gnome", "Halfling", "Half-Elf", "Half-Orc",
+                         "Human", "Tiefling"]
 
 character_races_expanded = ["Aarakocra", "Aasimar", "Centaur", "Changeling", "Firbolg", "Genasi", "Goliath",
                             "Kalashtar", "Minotaur", "Triton",

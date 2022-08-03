@@ -40,16 +40,6 @@ ability_scores = {'Strength': None,
                   'Wisdom': None,
                   'Charisma': None}
 
-# TODO add the ability to import racial modifiers dictionary based on race selection
-# Static Racial dictionary for testing
-# dragonborn = {'Strength': 2,
-#               'Dexterity': 0,
-#               'Constitution': 0,
-#               'Intelligence': 0,
-#               'Wisdom': 0,
-#               'Charisma': 1}
-
-
 # A dictionary that will be populated by the calculation of post-racially modified ability scores
 modifiers = {'Strength': None,
              'Dexterity': None,
@@ -77,6 +67,8 @@ sleep(2)
 print()
 print(f"As a {character_race} the following scores are modified ")
 
+# using getattr(object, name) I am able to pull in the appropriate
+# dictionary from the racial_modifiers file for use
 for key, value in getattr(racial_modifiers, character_race).items():
     if value != 0:
         print(f"{key} {value:+}")
