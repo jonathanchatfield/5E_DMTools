@@ -1,398 +1,398 @@
-dwarf_hill = {'Strength': 0,
-              'Dexterity': 0,
-              'Constitution': 2,
-              'Intelligence': 0,
-              'Wisdom': 1,
-              'Charisma': 0}
+hill_dwarf = {'strength': 0,
+              'dexterity': 0,
+              'constitution': 2,
+              'intelligence': 0,
+              'wisdom': 1,
+              'charisma': 0}
 
-dwarf_mountain = {'Strength': 2,
-                  'Dexterity': 0,
-                  'Constitution': 2,
-                  'Intelligence': 0,
-                  'Wisdom': 0,
-                  'Charisma': 0}
+mountain_dwarf = {'strength': 2,
+                  'dexterity': 0,
+                  'constitution': 2,
+                  'intelligence': 0,
+                  'wisdom': 0,
+                  'charisma': 0}
 
-elf_high = {'Strength': 0,
-            'Dexterity': 2,
-            'Constitution': 0,
-            'Intelligence': 1,
-            'Wisdom': 0,
-            'Charisma': 0}
+high_elf = {'strength': 0,
+            'dexterity': 2,
+            'constitution': 0,
+            'intelligence': 1,
+            'wisdom': 0,
+            'charisma': 0}
 
-elf_wood = {'Strength': 0,
-            'Dexterity': 2,
-            'Constitution': 0,
-            'Intelligence': 0,
-            'Wisdom': 1,
-            'Charisma': 0}
+wood_elf = {'strength': 0,
+            'dexterity': 2,
+            'constitution': 0,
+            'intelligence': 0,
+            'wisdom': 1,
+            'charisma': 0}
 
-elf_drow = {'Strength': 0,
-            'Dexterity': 2,
-            'Constitution': 0,
-            'Intelligence': 0,
-            'Wisdom': 0,
-            'Charisma': 1}
+drow_elf = {'strength': 0,
+            'dexterity': 2,
+            'constitution': 0,
+            'intelligence': 0,
+            'wisdom': 0,
+            'charisma': 1}
 
-halfling_lightfoot = {'Strength': 0,
-                      'Dexterity': 2,
-                      'Constitution': 0,
-                      'Intelligence': 0,
-                      'Wisdom': 0,
-                      'Charisma': 1}
+lightfoot_halfling = {'strength': 0,
+                      'dexterity': 2,
+                      'constitution': 0,
+                      'intelligence': 0,
+                      'wisdom': 0,
+                      'charisma': 1}
 
-halfling_stout = {'Strength': 0,
-                  'Dexterity': 2,
-                  'Constitution': 1,
-                  'Intelligence': 0,
-                  'Wisdom': 0,
-                  'Charisma': 0}
+stout_halfling = {'strength': 0,
+                  'dexterity': 2,
+                  'constitution': 1,
+                  'intelligence': 0,
+                  'wisdom': 0,
+                  'charisma': 0}
 
-human = {'Strength': 1,
-         'Dexterity': 1,
-         'Constitution': 1,
-         'Intelligence': 1,
-         'Wisdom': 1,
-         'Charisma': 1}
+human = {'strength': 1,
+         'dexterity': 1,
+         'constitution': 1,
+         'intelligence': 1,
+         'wisdom': 1,
+         'charisma': 1}
 
-dragonborn = {'Strength': 2,
-              'Dexterity': 0,
-              'Constitution': 0,
-              'Intelligence': 0,
-              'Wisdom': 0,
-              'Charisma': 1}
+dragonborn = {'strength': 2,
+              'dexterity': 0,
+              'constitution': 0,
+              'intelligence': 0,
+              'wisdom': 0,
+              'charisma': 1}
 
-gnome_forest = {'Strength': 0,
-                'Dexterity': 1,
-                'Constitution': 0,
-                'Intelligence': 2,
-                'Wisdom': 0,
-                'Charisma': 0}
+gnome_forest = {'strength': 0,
+                'dexterity': 1,
+                'constitution': 0,
+                'intelligence': 2,
+                'wisdom': 0,
+                'charisma': 0}
 
-gnome_rock = {'Strength': 0,
-              'Dexterity': 0,
-              'Constitution': 1,
-              'Intelligence': 2,
-              'Wisdom': 0,
-              'Charisma': 0}
+gnome_rock = {'strength': 0,
+              'dexterity': 0,
+              'constitution': 1,
+              'intelligence': 2,
+              'wisdom': 0,
+              'charisma': 0}
 
-half_elf = {'Strength': 0,
-            'Dexterity': 1,
-            'Constitution': 1,
-            'Intelligence': 0,
-            'Wisdom': 0,
-            'Charisma': 2}
+half_elf = {'strength': 0,
+            'dexterity': 1,
+            'constitution': 1,
+            'intelligence': 0,
+            'wisdom': 0,
+            'charisma': 2}
 
-half_orc = {'Strength': 2,
-            'Dexterity': 0,
-            'Constitution': 1,
-            'Intelligence': 0,
-            'Wisdom': 0,
-            'Charisma': 0}
+half_orc = {'strength': 2,
+            'dexterity': 0,
+            'constitution': 1,
+            'intelligence': 0,
+            'wisdom': 0,
+            'charisma': 0}
 
-tiefling = {'Strength': 0,
-            'Dexterity': 0,
-            'Constitution': 1,
-            'Intelligence': 0,
-            'Wisdom': 0,
-            'Charisma': 2}
+tiefling = {'strength': 0,
+            'dexterity': 0,
+            'constitution': 1,
+            'intelligence': 0,
+            'wisdom': 0,
+            'charisma': 2}
 
-aasimar = {'Strength': 0,
-           'Dexterity': 0,
-           'Constitution': 0,
-           'Intelligence': 0,
-           'Wisdom': 1,
-           'Charisma': 2}
+aasimar = {'strength': 0,
+           'dexterity': 0,
+           'constitution': 0,
+           'intelligence': 0,
+           'wisdom': 1,
+           'charisma': 2}
 
-elf_eladrin = {'Strength': 0,
-               'Dexterity': 2,
-               'Constitution': 0,
-               'Intelligence': 1,
-               'Wisdom': 0,
-               'Charisma': 0}
+elf_eladrin = {'strength': 0,
+               'dexterity': 2,
+               'constitution': 0,
+               'intelligence': 1,
+               'wisdom': 0,
+               'charisma': 0}
 
-aarakocra = {'Strength': 0,
-             'Dexterity': 2,
-             'Constitution': 0,
-             'Intelligence': 0,
-             'Wisdom': 1,
-             'Charisma': 0}
+aarakocra = {'strength': 0,
+             'dexterity': 2,
+             'constitution': 0,
+             'intelligence': 0,
+             'wisdom': 1,
+             'charisma': 0}
 
-gnome_deep = {'Strength': 1,
-              'Dexterity': 0,
-              'Constitution': 0,
-              'Intelligence': 2,
-              'Wisdom': 0,
-              'Charisma': 0}
+gnome_deep = {'strength': 1,
+              'dexterity': 0,
+              'constitution': 0,
+              'intelligence': 2,
+              'wisdom': 0,
+              'charisma': 0}
 
-genasi_air = {'Strength': 0,
-              'Dexterity': 1,
-              'Constitution': 2,
-              'Intelligence': 0,
-              'Wisdom': 0,
-              'Charisma': 0}
+genasi_air = {'strength': 0,
+              'dexterity': 1,
+              'constitution': 2,
+              'intelligence': 0,
+              'wisdom': 0,
+              'charisma': 0}
 
-genasi_earth = {'Strength': 1,
-                'Dexterity': 0,
-                'Constitution': 2,
-                'Intelligence': 0,
-                'Wisdom': 0,
-                'Charisma': 0}
+genasi_earth = {'strength': 1,
+                'dexterity': 0,
+                'constitution': 2,
+                'intelligence': 0,
+                'wisdom': 0,
+                'charisma': 0}
 
-genasi_fire = {'Strength': 0,
-               'Dexterity': 0,
-               'Constitution': 2,
-               'Intelligence': 1,
-               'Wisdom': 0,
-               'Charisma': 0}
+genasi_fire = {'strength': 0,
+               'dexterity': 0,
+               'constitution': 2,
+               'intelligence': 1,
+               'wisdom': 0,
+               'charisma': 0}
 
-genasi_water = {'Strength': 0,
-                'Dexterity': 0,
-                'Constitution': 2,
-                'Intelligence': 0,
-                'Wisdom': 1,
-                'Charisma': 0}
+genasi_water = {'strength': 0,
+                'dexterity': 0,
+                'constitution': 2,
+                'intelligence': 0,
+                'wisdom': 1,
+                'charisma': 0}
 
-goliath = {'Strength': 2,
-           'Dexterity': 0,
-           'Constitution': 1,
-           'Intelligence': 0,
-           'Wisdom': 0,
-           'Charisma': 0}
+goliath = {'strength': 2,
+           'dexterity': 0,
+           'constitution': 1,
+           'intelligence': 0,
+           'wisdom': 0,
+           'charisma': 0}
 
-dwarf_grey = {'Strength': 1,
-              'Dexterity': 0,
-              'Constitution': 2,
-              'Intelligence': 0,
-              'Wisdom': 0,
-              'Charisma': 0}
+dwarf_grey = {'strength': 1,
+              'dexterity': 0,
+              'constitution': 2,
+              'intelligence': 0,
+              'wisdom': 0,
+              'charisma': 0}
 
-halfling_ghostwise = {'Strength': 0,
-                      'Dexterity': 2,
-                      'Constitution': 0,
-                      'Intelligence': 0,
-                      'Wisdom': 1,
-                      'Charisma': 0}
+halfling_ghostwise = {'strength': 0,
+                      'dexterity': 2,
+                      'constitution': 0,
+                      'intelligence': 0,
+                      'wisdom': 1,
+                      'charisma': 0}
 
-tiefling_feral = {'Strength': 0,
-                  'Dexterity': 2,
-                  'Constitution': 0,
-                  'Intelligence': 1,
-                  'Wisdom': 0,
-                  'Charisma': 0}
+tiefling_feral = {'strength': 0,
+                  'dexterity': 2,
+                  'constitution': 0,
+                  'intelligence': 1,
+                  'wisdom': 0,
+                  'charisma': 0}
 
-aasimar_protector = {'Strength': 0,
-                     'Dexterity': 0,
-                     'Constitution': 0,
-                     'Intelligence': 0,
-                     'Wisdom': 1,
-                     'Charisma': 2}
+aasimar_protector = {'strength': 0,
+                     'dexterity': 0,
+                     'constitution': 0,
+                     'intelligence': 0,
+                     'wisdom': 1,
+                     'charisma': 2}
 
-aasimar_fallen = {'Strength': 1,
-                  'Dexterity': 0,
-                  'Constitution': 0,
-                  'Intelligence': 0,
-                  'Wisdom': 0,
-                  'Charisma': 2}
+aasimar_fallen = {'strength': 1,
+                  'dexterity': 0,
+                  'constitution': 0,
+                  'intelligence': 0,
+                  'wisdom': 0,
+                  'charisma': 2}
 
-aasimar_scourge = {'Strength': 0,
-                   'Dexterity': 0,
-                   'Constitution': 1,
-                   'Intelligence': 0,
-                   'Wisdom': 0,
-                   'Charisma': 2}
+aasimar_scourge = {'strength': 0,
+                   'dexterity': 0,
+                   'constitution': 1,
+                   'intelligence': 0,
+                   'wisdom': 0,
+                   'charisma': 2}
 
-firbolg = {'Strength': 1,
-           'Dexterity': 0,
-           'Constitution': 0,
-           'Intelligence': 0,
-           'Wisdom': 2,
-           'Charisma': 0}
+firbolg = {'strength': 1,
+           'dexterity': 0,
+           'constitution': 0,
+           'intelligence': 0,
+           'wisdom': 2,
+           'charisma': 0}
 
-kenku = {'Strength': 0,
-         'Dexterity': 2,
-         'Constitution': 1,
-         'Intelligence': 0,
-         'Wisdom': 1,
-         'Charisma': 0}
+kenku = {'strength': 0,
+         'dexterity': 2,
+         'constitution': 1,
+         'intelligence': 0,
+         'wisdom': 1,
+         'charisma': 0}
 
-lizardfolk = {'Strength': 0,
-              'Dexterity': 0,
-              'Constitution': 2,
-              'Intelligence': 0,
-              'Wisdom': 1,
-              'Charisma': 0}
+lizardfolk = {'strength': 0,
+              'dexterity': 0,
+              'constitution': 2,
+              'intelligence': 0,
+              'wisdom': 1,
+              'charisma': 0}
 
-tabaxi = {'Strength': 0,
-          'Dexterity': 2,
-          'Constitution': 0,
-          'Intelligence': 0,
-          'Wisdom': 0,
-          'Charisma': 1}
+tabaxi = {'strength': 0,
+          'dexterity': 2,
+          'constitution': 0,
+          'intelligence': 0,
+          'wisdom': 0,
+          'charisma': 1}
 
-triton = {'Strength': 1,
-          'Dexterity': 0,
-          'Constitution': 1,
-          'Intelligence': 0,
-          'Wisdom': 0,
-          'Charisma': 1}
+triton = {'strength': 1,
+          'dexterity': 0,
+          'constitution': 1,
+          'intelligence': 0,
+          'wisdom': 0,
+          'charisma': 1}
 
-bugbear = {'Strength': 2,
-           'Dexterity': 1,
-           'Constitution': 0,
-           'Intelligence': 0,
-           'Wisdom': 0,
-           'Charisma': 0}
+bugbear = {'strength': 2,
+           'dexterity': 1,
+           'constitution': 0,
+           'intelligence': 0,
+           'wisdom': 0,
+           'charisma': 0}
 
-goblin = {'Strength': 0,
-          'Dexterity': 2,
-          'Constitution': 1,
-          'Intelligence': 0,
-          'Wisdom': 0,
-          'Charisma': 0}
+goblin = {'strength': 0,
+          'dexterity': 2,
+          'constitution': 1,
+          'intelligence': 0,
+          'wisdom': 0,
+          'charisma': 0}
 
-hobgoblin = {'Strength': 0,
-             'Dexterity': 0,
-             'Constitution': 2,
-             'Intelligence': 1,
-             'Wisdom': 0,
-             'Charisma': 0}
+hobgoblin = {'strength': 0,
+             'dexterity': 0,
+             'constitution': 2,
+             'intelligence': 1,
+             'wisdom': 0,
+             'charisma': 0}
 
-kobold = {'Strength': 0,
-          'Dexterity': 2,
-          'Constitution': 0,
-          'Intelligence': 0,
-          'Wisdom': 0,
-          'Charisma': 0}
+kobold = {'strength': 0,
+          'dexterity': 2,
+          'constitution': 0,
+          'intelligence': 0,
+          'wisdom': 0,
+          'charisma': 0}
 
-orc = {'Strength': 2,
-       'Dexterity': 0,
-       'Constitution': 1,
-       'Intelligence': 0,
-       'Wisdom': 0,
-       'Charisma': 0}
+orc = {'strength': 2,
+       'dexterity': 0,
+       'constitution': 1,
+       'intelligence': 0,
+       'wisdom': 0,
+       'charisma': 0}
 
-yaunti_pureblood = {'Strength': 0,
-                    'Dexterity': 0,
-                    'Constitution': 0,
-                    'Intelligence': 1,
-                    'Wisdom': 0,
-                    'Charisma': 2}
+yaunti_pureblood = {'strength': 0,
+                    'dexterity': 0,
+                    'constitution': 0,
+                    'intelligence': 1,
+                    'wisdom': 0,
+                    'charisma': 2}
 
-elf_shadarkai = {'Strength': 0,
-                 'Dexterity': 2,
-                 'Constitution': 1,
-                 'Intelligence': 0,
-                 'Wisdom': 0,
-                 'Charisma': 0}
+elf_shadarkai = {'strength': 0,
+                 'dexterity': 2,
+                 'constitution': 1,
+                 'intelligence': 0,
+                 'wisdom': 0,
+                 'charisma': 0}
 
-elf_sea = {'Strength': 0,
-           'Dexterity': 2,
-           'Constitution': 1,
-           'Intelligence': 0,
-           'Wisdom': 0,
-           'Charisma': 0}
+elf_sea = {'strength': 0,
+           'dexterity': 2,
+           'constitution': 1,
+           'intelligence': 0,
+           'wisdom': 0,
+           'charisma': 0}
 
-githyanki = {'Strength': 2,
-             'Dexterity': 0,
-             'Constitution': 0,
-             'Intelligence': 1,
-             'Wisdom': 0,
-             'Charisma': 0}
+githyanki = {'strength': 2,
+             'dexterity': 0,
+             'constitution': 0,
+             'intelligence': 1,
+             'wisdom': 0,
+             'charisma': 0}
 
-githzerai = {'Strength': 0,
-             'Dexterity': 0,
-             'Constitution': 0,
-             'Intelligence': 1,
-             'Wisdom': 2,
-             'Charisma': 0}
+githzerai = {'strength': 0,
+             'dexterity': 0,
+             'constitution': 0,
+             'intelligence': 1,
+             'wisdom': 2,
+             'charisma': 0}
 
-tortle = {'Strength': 2,
-          'Dexterity': 0,
-          'Constitution': 0,
-          'Intelligence': 0,
-          'Wisdom': 1,
-          'Charisma': 0}
+tortle = {'strength': 2,
+          'dexterity': 0,
+          'constitution': 0,
+          'intelligence': 0,
+          'wisdom': 1,
+          'charisma': 0}
 
-verdan = {'Strength': 0,
-          'Dexterity': 0,
-          'Constitution': 1,
-          'Intelligence': 0,
-          'Wisdom': 0,
-          'Charisma': 2}
+verdan = {'strength': 0,
+          'dexterity': 0,
+          'constitution': 1,
+          'intelligence': 0,
+          'wisdom': 0,
+          'charisma': 2}
 
-changeling = {'Strength': 0,
-              'Dexterity': 1,
-              'Constitution': 0,
-              'Intelligence': 0,
-              'Wisdom': 0,
-              'Charisma': 2}
+changeling = {'strength': 0,
+              'dexterity': 1,
+              'constitution': 0,
+              'intelligence': 0,
+              'wisdom': 0,
+              'charisma': 2}
 
-shifter_beasthide = {'Strength': 1,
-                     'Dexterity': 0,
-                     'Constitution': 2,
-                     'Intelligence': 0,
-                     'Wisdom': 0,
-                     'Charisma': 0}
+shifter_beasthide = {'strength': 1,
+                     'dexterity': 0,
+                     'constitution': 2,
+                     'intelligence': 0,
+                     'wisdom': 0,
+                     'charisma': 0}
 
-shifter_longtooth = {'Strength': 2,
-                     'Dexterity': 1,
-                     'Constitution': 0,
-                     'Intelligence': 0,
-                     'Wisdom': 0,
-                     'Charisma': 0}
+shifter_longtooth = {'strength': 2,
+                     'dexterity': 1,
+                     'constitution': 0,
+                     'intelligence': 0,
+                     'wisdom': 0,
+                     'charisma': 0}
 
-shifter_swiftstride = {'Strength': 1,
-                       'Dexterity': 0,
-                       'Constitution': 0,
-                       'Intelligence': 0,
-                       'Wisdom': 2,
-                       'Charisma': 0}
+shifter_swiftstride = {'strength': 1,
+                       'dexterity': 0,
+                       'constitution': 0,
+                       'intelligence': 0,
+                       'wisdom': 2,
+                       'charisma': 0}
 
-warforged = {'Strength': 0,
-             'Dexterity': 1,
-             'Constitution': 2,
-             'Intelligence': 0,
-             'Wisdom': 0,
-             'Charisma': 0}
+warforged = {'strength': 0,
+             'dexterity': 1,
+             'constitution': 2,
+             'intelligence': 0,
+             'wisdom': 0,
+             'charisma': 0}
 
-minotaur = {'Strength': 2,
-            'Dexterity': 0,
-            'Constitution': 1,
-            'Intelligence': 0,
-            'Wisdom': 0,
-            'Charisma': 0}
+minotaur = {'strength': 2,
+            'dexterity': 0,
+            'constitution': 1,
+            'intelligence': 0,
+            'wisdom': 0,
+            'charisma': 0}
 
-centaur = {'Strength': 2,
-           'Dexterity': 0,
-           'Constitution': 0,
-           'Intelligence': 0,
-           'Wisdom': 1,
-           'Charisma': 0}
+centaur = {'strength': 2,
+           'dexterity': 0,
+           'constitution': 0,
+           'intelligence': 0,
+           'wisdom': 1,
+           'charisma': 0}
 
-loxodon = {'Strength': 0,
-           'Dexterity': 0,
-           'Constitution': 2,
-           'Intelligence': 0,
-           'Wisdom': 1,
-           'Charisma': 0}
+loxodon = {'strength': 0,
+           'dexterity': 0,
+           'constitution': 2,
+           'intelligence': 0,
+           'wisdom': 1,
+           'charisma': 0}
 
-vedalkin = {'Strength': 0,
-            'Dexterity': 0,
-            'Constitution': 0,
-            'Intelligence': 2,
-            'Wisdom': 1,
-            'Charisma': 0}
+vedalkin = {'strength': 0,
+            'dexterity': 0,
+            'constitution': 0,
+            'intelligence': 2,
+            'wisdom': 1,
+            'charisma': 0}
 
-leonin = {'Strength': 1,
-          'Dexterity': 0,
-          'Constitution': 2,
-          'Intelligence': 0,
-          'Wisdom': 0,
-          'Charisma': 0}
+leonin = {'strength': 1,
+          'dexterity': 0,
+          'constitution': 2,
+          'intelligence': 0,
+          'wisdom': 0,
+          'charisma': 0}
 
-satyr = {'Strength': 0,
-         'Dexterity': 1,
-         'Constitution': 0,
-         'Intelligence': 0,
-         'Wisdom': 0,
-         'Charisma': 2}
+satyr = {'strength': 0,
+         'dexterity': 1,
+         'constitution': 0,
+         'intelligence': 0,
+         'wisdom': 0,
+         'charisma': 2}

@@ -4,12 +4,18 @@ from time import sleep
 import math
 import racial_modifiers
 
-character_name = input("By what name will your character be known? ")
+character_name = input("by what name will your character be known? ")
 
-print("You may choose from the following races:")
+print("you may choose from the following races:")
 print(", ".join(lists_file.character_races_basic))
 
+# consider a way to gracefully handle user input
+# taking into account the format of the racial_modifiers file
+# and how the output is presented
+
+# Add a try:except to ensure race is in list provided
 character_race = input("What race will your character be? ").lower()
+
 
 print("Let's roll stats before choosing a class.\n")
 your_roll = random_generators.basic_stats()
@@ -19,42 +25,51 @@ print(f"You rolled: {your_roll} \n")
 print("The following classes are available, which will you choose? ")
 print(", ".join(lists_file.character_classes))
 
+# Add a try:except to ensure class is chosen from list provided
 character_class = input("Enter your choice: ")
 print('\n')
 
-character_creation = {"Name": character_name,
-                      "Race": character_race,
-                      "Class": character_class}
+character_creation = {"name": character_name,
+                      "race": character_race,
+                      "class": character_class}
 
 print("Here is what you have so far: \n")
 
 for key, value in character_creation.items():
     print(f"{key}: {value}")
 
-# Ability Score dictionary for score assignment
+# ability score dictionary for score assignment
 
-ability_scores = {'Strength': None,
-                  'Dexterity': None,
-                  'Constitution': None,
-                  'Intelligence': None,
-                  'Wisdom': None,
-                  'Charisma': None}
+ability_scores = {'strength': None,
+                  'dexterity': None,
+                  'constitution': None,
+                  'intelligence': None,
+                  'wisdom': None,
+                  'charisma': None}
 
-# A dictionary that will be populated by the calculation of post-racially modified ability scores
-modifiers = {'Strength': None,
-             'Dexterity': None,
-             'Constitution': None,
-             'Intelligence': None,
-             'Wisdom': None,
-             'Charisma': None}
+# a dictionary that will be populated by the calculation of post-racially modified ability scores
+modifiers = {'strength': None,
+             'dexterity': None,
+             'constitution': None,
+             'intelligence': None,
+             'wisdom': None,
+             'charisma': None}
 
-# **some sort of error checking needs to go here**#
+# If the score isn't in the list, ask again
 for ability in ability_scores:
-    print(f"Scores left to assign:{your_roll}")
-    score = int(input(f"which score would you like to assign to {ability}: "))
-    ability_scores[ability] = score
-    your_roll.remove(score)
-# **some sort of error checking needs to go here**#
+    while True:
+        try:
+            print(f"Scores left to assign:{your_roll}")
+            score = int(input(f"Which score would you like to assign to {ability}: "))
+            ability_scores[ability] = score
+            your_roll.remove(score)
+        except ValueError:
+            print("That score isn't in the list, try again.")
+            continue
+        else:
+            # was parsed successfully
+            break
+
 
 print("Assigning...")
 sleep(2)
@@ -73,8 +88,7 @@ for key, value in getattr(racial_modifiers, character_race).items():
     if value != 0:
         print(f"{key} {value:+}")
 
-
-print("Adding racial modifiers:")
+print("adding racial modifiers:")
 sleep(2)
 
 # look at the base ability_scores, check if it exists in racial modifiers for dragonborn, and add the values that are
@@ -86,7 +100,7 @@ for key in ability_scores:
         pass
 
 print()
-print("Your racially modified scores are: ")
+print("your racially modified scores are: ")
 for key, value in ability_scores.items():
     print(key, value)
 
@@ -96,7 +110,7 @@ for key in ability_scores:
 
 sleep(2)
 print()
-print("Your ability modifiers are: ")
+print("your ability modifiers are: ")
 for key, value in modifiers.items():
     if value > 0:
         print(f"{key}: +{value}")
