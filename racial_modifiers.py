@@ -1,46 +1,46 @@
-hill_dwarf = {'strength': 0,
+dwarf_hill = {'strength': 0,
               'dexterity': 0,
               'constitution': 2,
               'intelligence': 0,
               'wisdom': 1,
               'charisma': 0}
 
-mountain_dwarf = {'strength': 2,
+dwarf_mountain = {'strength': 2,
                   'dexterity': 0,
                   'constitution': 2,
                   'intelligence': 0,
                   'wisdom': 0,
                   'charisma': 0}
 
-high_elf = {'strength': 0,
+elf_high = {'strength': 0,
             'dexterity': 2,
             'constitution': 0,
             'intelligence': 1,
             'wisdom': 0,
             'charisma': 0}
 
-wood_elf = {'strength': 0,
+elf_wood = {'strength': 0,
             'dexterity': 2,
             'constitution': 0,
             'intelligence': 0,
             'wisdom': 1,
             'charisma': 0}
 
-drow_elf = {'strength': 0,
+elf_drow = {'strength': 0,
             'dexterity': 2,
             'constitution': 0,
             'intelligence': 0,
             'wisdom': 0,
             'charisma': 1}
 
-lightfoot_halfling = {'strength': 0,
+halfling_lightfoot = {'strength': 0,
                       'dexterity': 2,
                       'constitution': 0,
                       'intelligence': 0,
                       'wisdom': 0,
                       'charisma': 1}
 
-stout_halfling = {'strength': 0,
+halfling_stout = {'strength': 0,
                   'dexterity': 2,
                   'constitution': 1,
                   'intelligence': 0,
@@ -75,14 +75,14 @@ gnome_rock = {'strength': 0,
               'wisdom': 0,
               'charisma': 0}
 
-half_elf = {'strength': 0,
+elf_half = {'strength': 0,
             'dexterity': 1,
             'constitution': 1,
             'intelligence': 0,
             'wisdom': 0,
             'charisma': 2}
 
-half_orc = {'strength': 2,
+ork_half = {'strength': 2,
             'dexterity': 0,
             'constitution': 1,
             'intelligence': 0,
