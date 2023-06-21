@@ -4,9 +4,9 @@ from time import sleep
 import math
 import racial_modifiers
 
-character_name = input("by what name will your character be known? ")
+character_name = input("By what name will your character be known? ")
 
-print("you may choose from the following races:")
+print("You may choose from the following races:")
 print(", ".join(lists_file.character_races_basic))
 
 # consider a way to gracefully handle user input
@@ -88,7 +88,7 @@ for key, value in getattr(racial_modifiers, character_race).items():
     if value != 0:
         print(f"{key} {value:+}")
 
-print("adding racial modifiers:")
+print("Adding racial modifiers:")
 sleep(2)
 
 # look at the base ability_scores, check if it exists in racial modifiers for dragonborn, and add the values that are
@@ -100,7 +100,7 @@ for key in ability_scores:
         pass
 
 print()
-print("your racially modified scores are: ")
+print("Your racially modified scores are: ")
 for key, value in ability_scores.items():
     print(key, value)
 
@@ -110,7 +110,7 @@ for key in ability_scores:
 
 sleep(2)
 print()
-print("your ability modifiers are: ")
+print("Your ability modifiers are: ")
 for key, value in modifiers.items():
     if value > 0:
         print(f"{key}: +{value}")
